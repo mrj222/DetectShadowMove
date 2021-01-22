@@ -12,4 +12,4 @@ This project focus on shadowMove in APT detection. We add kernel module to send 
 
 ## Usage
 
-The usage of code is 
+The usage of code is included in `README.md` in each directory. 
