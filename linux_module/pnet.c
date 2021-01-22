@@ -131,7 +131,7 @@ static int __init pnet_module_init(void){
     dev_add_pack(&pnet_packet_type);
     printk(KERN_INFO"pnet_hdr_length %ld\n", sizeof(struct pid_hdr_t));
     printk(KERN_ERR "%s,%d\n", __FUNCTION__, __LINE__);
-    real_dev = __dev_get_by_name(&init_net, "veth1-2");
+    real_dev = __dev_get_by_name(&init_net, "eth0");
     pnet_dev = alloc_netdev(0, "pneteth%d", NET_NAME_UNKNOWN, ether_setup);
     pnet_dev -> netdev_ops = &pnet_ops;
     register_netdev(pnet_dev);
